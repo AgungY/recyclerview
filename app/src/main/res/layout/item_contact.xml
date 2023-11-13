@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvContact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="4dp"
+    app:cardCornerRadius="20dp"
+    app:cardcompatpadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true">
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_contact" />
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/ivAvatar"
+        android:text="Nama Contact"
+        android:fontFamily="sans-serif"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_aligParentEnd="true"
+        android:text="Available"
+        android:fontFamily="sans-serif"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
